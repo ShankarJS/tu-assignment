@@ -2,7 +2,8 @@ package com.tu;
 
 /**
  * Hello world!
- *
+ * 1, 2, 5, 6, 7 done
+ * 3, 4, theory remaining
  */
 public class App 
 {

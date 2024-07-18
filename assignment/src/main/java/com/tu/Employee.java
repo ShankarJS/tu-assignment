@@ -11,6 +11,7 @@ public class Employee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -20,6 +21,7 @@ public class Employee {
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -43,9 +45,15 @@ public class Employee {
 			return false;
 		return true;
 	}
+	
 	public long getId() {
 		return id;
 	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
+
 	public void setId(long id) {
 		this.id = id;
 	}

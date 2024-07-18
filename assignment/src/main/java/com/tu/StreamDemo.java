@@ -18,13 +18,13 @@ public class StreamDemo {
 		List<Integer> evenSquares = listNum.stream().filter(e->e%2==0).map(a-> a*a).collect(Collectors.toList());
 		System.out.println("Squares of evens: "+evenSquares);
 		
-		try (Scanner scanner = new Scanner(new File("test.txt"))) {
-		    while (scanner.hasNext()) {
-		        System.out.println(scanner.nextLine());
-		    }
-		} catch (FileNotFoundException fnfe) {
-		    fnfe.printStackTrace();
-		} 
+//		try (Scanner scanner = new Scanner(new File("test.txt"))) {
+//		    while (scanner.hasNext()) {
+//		        System.out.println(scanner.nextLine());
+//		    }
+//		} catch (FileNotFoundException fnfe) {
+//		    fnfe.printStackTrace();
+//		} 
 	}
 
 }
